@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* General styles */
+body {
+    font-family:Montserrat, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: #f1f4f4;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+input {
+    font-size: 1rem;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    transition: border-color 0.5s ease;
+}
+
+input:focus {
+    border-color: #6a11cb;
+}
+
+/* Button with hover effect */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1.2px solid white;
+    border-radius: 5px;
+    background-color: #6a11cb;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s ease-in-out;
+    
+}
+button:hover {
+    background: none;
+    color: #6a11cb;
+    border: 1.2px solid #6a11cb;    
+}
+
+/* Smooth animation for definition */
+#definition {
+    font-style: oblique;
+    opacity: 0;  /* Initially hidden */
+    max-height: 0;  /* Collapse the element */
+    overflow: hidden;
+    transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    padding: 0 20px;
+}
+
+#definition.show {
+    opacity: 1;
+    max-height: 500px;  /* Allow enough space for the content */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
