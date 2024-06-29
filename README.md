@@ -1,6 +1,6 @@
 ## Dictionary-App
 
-A simple dictionary app made using JSP, Html, CSS, Javascript, Tomcat as server.
+A simple dictionary app made using JSP, Html, CSS, Javascript and Tomcat as server.
 
 ----------------------------------------------------------------------------------------------
 
